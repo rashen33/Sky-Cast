@@ -8,7 +8,6 @@ const weatherIcon = document.querySelector(".weather-icon");
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data = await response.json();
-    console.log(data);
 
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
@@ -34,15 +33,16 @@ async function checkWeather(city){
 
 searchBtn.addEventListener("click", () => {
     checkWeather(searchTxt.value);
+    checkWeatherForCast(searchTxt.value);
 });
 
 
 //------------Weather Forcast Card---------------------
 const apiKeyWFC = "71a0fdcfa637f2e17fbea115e93854e9";
-const apiUrlWFC = "http://api.openweathermap.org/data/2.5/forecast?q=negombo&units=metric";
+const apiUrlWFC = "http://api.openweathermap.org/data/2.5/forecast?&units=metric&q=";
 
-async function checkWeatherForCast(){
-    const res = await fetch(apiUrlWFC + `&appid=${apiKeyWFC}`);
+async function checkWeatherForCast(city){
+    const res = await fetch(apiUrlWFC + city + `&appid=${apiKeyWFC}`);
     var data = await res.json();
     console.log(data);
 
@@ -76,8 +76,5 @@ async function checkWeatherForCast(){
     }else if(data.list[7].weather[0].main == "Wind"){
         weatherFCIcon.src = "assets/wind.png";
     }
-
-
 }
 
-checkWeatherForCast();
