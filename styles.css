@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #272829;
+    background-color: #64CCC5;
 }
 .main{
     display:flex;
@@ -115,7 +115,7 @@ body{
     align-items: center;
     text-align: center;
     font-size: 50px;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 .info h2{
     font-size: 24px;
@@ -133,6 +133,9 @@ body{
     width: 40px;
     margin-right: 5px;
     padding-bottom: 8px;
+}
+.wind-card1, .humidity-card1{
+    font-size: 20px;
 }
 .text{
     padding-top: 20px;
