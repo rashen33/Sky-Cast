@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #64CCC5;
+    background-color: #001C30;
 }
 .main{
     display:flex;
@@ -114,6 +114,7 @@ body{
 .info h1{
     align-items: center;
     text-align: center;
+    font-weight: 500;
     font-size: 50px;
     margin-top: 5px;
 }
