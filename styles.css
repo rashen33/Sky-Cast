@@ -7,15 +7,39 @@
 body{
     background-color: #272829;
 }
+.main{
+    display:flex;
+}
 .card{
-    width: 90%;
-    max-width: 470px;
+    display: inline-block;
+    width: 35%;
+    height: 600px;
+    /* max-width: 470px; */
+    background-image: linear-gradient(to right top, #55b5ff, #39a6ff, #2696ff, #2985ff, #3f72ff);
+    color: #fff;
+    margin: 100px auto 20px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.card-1{
+    width: 60%;
+    display: inline-block;
+    height: 600px;
+    /* max-width: 470px; */
     background-image: linear-gradient(to right top, #55b5ff, #39a6ff, #2696ff, #2985ff, #3f72ff);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+}
+.box{
+    width: 150px;
+    height: 500px;
+    display: inline-flex;
+    gap: 50px;
+    margin-right:0px;
 }
 .search{
     width: 100%;
@@ -79,4 +103,37 @@ body{
 .humidity, .wind{
     font-size: 28px;
     margin-top: -6px;
+}
+.info{
+    width: 150px;
+}
+.info img{
+    width: 180px;
+    margin-top: 16px;
+}
+.info h1{
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 8px;
+}
+.info h2{
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 20px;
+
+}
+.col-hw{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 20px;
+}
+.col-hw img{
+    width: 40px;
+    margin-right: 5px;
+    padding-bottom: 8px;
+}
+.text{
+    padding-top: 20px;
 }
