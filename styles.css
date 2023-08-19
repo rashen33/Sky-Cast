@@ -138,3 +138,25 @@ body{
 .text{
     padding-top: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .card, .card-1 {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 20px auto; /* Reduce margins for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .box {
+        display: block; /* Stack forecast boxes vertically */
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* Update other styles as needed for smaller screens */
+}
