@@ -158,5 +158,9 @@ body{
         margin: 20px 0;
     }
 
+    .info{
+        margin: auto;
+    }
+
     /* Update other styles as needed for smaller screens */
 }
