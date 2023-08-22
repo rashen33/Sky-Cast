@@ -29,6 +29,7 @@ async function checkWeather(city){
     }else if(data.weather[0].main == "Wind"){
         weatherIcon.src = "assets/wind.png";
     }
+    
 } 
 
 searchBtn.addEventListener("click", () => {
